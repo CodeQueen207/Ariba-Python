@@ -19,14 +19,7 @@ body {
   border-radius: 25px;
   backdrop-filter: blur(10px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-/* Header */
-header h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
+  background-image: url(https://i.pinimg.com/1200x/f7/0f/5d/f70f5d45d9eff0ed8f8dc4b9e4a1a564.jpg);
 .subtitle {
   font-size: 1.2rem;
   margin-top: 10px;
