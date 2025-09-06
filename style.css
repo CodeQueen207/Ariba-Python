@@ -8,6 +8,7 @@ body {
   align-items: center;
   min-height: 100vh;
   color: #7B434E;
+  background-image: url('image.png');
 }
 
 /* Container */

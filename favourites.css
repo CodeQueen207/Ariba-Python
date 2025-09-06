@@ -1,0 +1,82 @@
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://i.pinimg.com/736x/da/67/89/da6789cb6d98752e50747e7f2bbff9fa.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #7B434E;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* Overlay to make text readable */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 0;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* above overlay */
+}
+
+/* Header */
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 40px 0;
+  color: #BF7C8A;
+}
+
+/* Favourite Cards Section */
+.favourites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.favourite-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 25px 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.favourite-card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.favourite-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
+.favourite-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  background: rgba(255, 255, 255, 0.35);
+}
+
